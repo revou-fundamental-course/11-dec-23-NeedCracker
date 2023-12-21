@@ -1,0 +1,181 @@
+html {
+    scroll-behavior: smooth;
+    scroll-padding: 9.8rem;
+}
+/* General Styles */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+    /* CSS Styles */
+.logo {
+    width: 65px;
+    height: 65px;
+}
+
+/* Header Styles */
+header {
+    background-color: #0B7551;
+    box-shadow: 0 2px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 1px solid;
+}
+
+/* Main Footer Styles */
+main {
+    margin-top: 80px;
+    padding: 20px;
+    box-shadow: 0 2px;
+}
+
+main div {
+    margin-top: 20px;
+}
+
+h3, p {
+    margin: 0;
+    padding: 0;
+}
+
+main img {
+    width: 100%;
+    height: 400px;
+}
+
+h1 {
+    padding-left: 20px;
+}
+
+/* Choose Place Footer Styles */
+place {
+    box-shadow: 0 2px;
+}
+
+.placestation {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    padding-inline: 120px;
+}
+
+.circle {
+    width: 100px;
+    height: 100px;
+    border:2px solid #0B7551 ;
+    border-radius: 50%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* Registration Footer Styles */
+#registration {
+    margin-top: 20px;
+}
+
+/* Form Styles */
+.registration-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.regist
+ h2 {
+    font-weight: bold;
+}
+
+.form-container {
+    background-color:#0B7551;
+    width: 500px;
+    border: 1px solid #ffffffcc;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+/* Result Styles */
+.result-container {
+    background-color: #0B7551;
+    border: 1px solid #000000cc;
+    border-radius: 20px;
+    width: 500px;
+    padding: 20px;
+}
+
+.result-title {
+    border-bottom: 1px solid #000000cc;
+    padding: 10px;
+}
+
+.result-title h3 {
+    text-align: center;
+}
+
+.result-content {
+    padding: 12px;
+}
+
+.result-content p {
+    border: 1px solid #000000cc;
+    border-radius: 5px;
+    margin-top: 10px;
+    background-color: #0B7551;
+    font-size: 17px;
+    padding: 5px;
+}
+
+@media only screen and (max-width: 600px) {
+    /* Style yang akan berlaku jika lebar layar kurang dari atau sama dengan 600px */
+    
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul {
+        margin-top: 10px;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+    }
+
+    .placestation {
+        flex-direction: column;
+        text-align: left;
+        padding-inline: 20px;
+    }
+
+    .circle {
+        width: 50px;
+        height: 50px;
+    }
+}

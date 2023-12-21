@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NeedCamp</title>
+    <link rel="stylesheet" href="css/style.css">
+    
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="assets/NeedCamp.png" class="logo" alt="NeedCamp Logo">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#place">Choose Place</a></li>
+                <li><a href="#registration">Registration</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="home">
+        <div>
+            <h3>Hi <span id="nameData"></span>, Welcome To Needcation</h3>
+            <p>Explore the beauty of nature with NeedCamp.</p>
+            <img src="assets/image4.jpg" alt="Nature Image">
+        </div>
+    </main>
+
+    <h1>Choose Your Place</h1>
+    <place class="placestation" id="place">
+        <div>
+            <div class="circle" style="background-image:url(assets/campgunung.jpeg);"></div>
+            <h4>Mountains</h4>
+        </div>
+        <div>
+            <div class="circle" style="background-image:url(assets/campdanau.jpg);"></div>
+            <h4>Lake</h4>
+        </div>
+        <div>
+            <div class="circle" style="background-image:url(assets/camppantai.jpg);"></div>
+            <h4>Beach</h4>
+        </div>
+    </place>
+
+    <footer id="registration">
+        <div class="registration-form">
+            <div class="regist">
+                <h2>Register Now</h2>
+            </div>
+
+            <div class="form-container">
+                <form name="registrationForm">
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="name">Your Name</label>
+                        </div>
+                        <div class="col-75">
+                            <input type="text" id="name" name="name" placeholder="Enter Your Name">
+                            <p id="errorName"></p>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="dateOfBirth">Date of Birth</label>
+                        </div>
+                        <div class="col-75">
+                            <input type="date" id="dateOfBirth" name="dateOfBirth">
+                            <p id="errorDateOfBirth"></p>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-25">
+                            <label>Gender</label>
+                        </div>
+                        <div class="col-75">
+                            <input type="radio" id="genderMan" name="gender" value="man">
+                            <label for="genderMan">Man</label>
+                            <input type="radio" id="genderWoman" name="gender" value="woman">
+                            <label for="genderWoman">Woman</label>
+                            <p id="errorGender"></p>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="phoneNumber">Phone Number</label>
+                        </div>
+                        <div class="col-75">
+                            <input type="tel" id="phoneNumber" name="phoneNumber" placeholder="Enter Your Phone Number">
+                            <p id="errorPhoneNumber"></p>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <button type="button" onclick="validateForm()">Register Now</button>
+                    </div>
+                </form>
+            </div>
+            <div class="result-container">
+                <div class="result-title">
+                    <h3>Registration Details</h3>
+                </div>
+                <div class="result-content">
+                    <p>Name: <span id="nameData"></span></p>
+                    <p>Date of Birth: <span id="dateOfBirthData"></span></p>
+                    <p>Gender: <span id="genderData"></span></p>
+                    <p>Phone Number: <span id="phoneNumberData"></span></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>
